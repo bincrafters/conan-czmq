@@ -33,7 +33,7 @@ class CZMQConan(ConanFile):
             self.build_requires.add('ninja/1.9.0')
 
     def requirements(self):
-        self.requires.add('zmq/4.2.5@bincrafters/stable')
+        self.requires.add('zeromq/4.3.2')
         if self.options.lz4:
             self.requires.add('lz4/1.9.2')
         if self.options.uuid:
